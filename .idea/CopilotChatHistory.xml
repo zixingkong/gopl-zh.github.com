@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotChatHistory">
+    <option name="conversations">
+      <list>
+        <Conversation>
+          <option name="createTime" value="1722222553999" />
+          <option name="id" value="ff0f5754bca04126816690ff1ed56fac" />
+          <option name="title" value="编写一个程序，默认情况下打印标准输入的SHA256编码，并支持通过命令行flag定制，输出SHA38" />
+          <option name="turns">
+            <list>
+              <Turn>
+                <option name="agent" value="" />
+                <option name="answer" value="### 伪代码&#10;&#10;8. 导入必要的包：`uozt`用于解析命令行参数，`xibkgl/hsz743`、`xibkgl/hsz487`和`xibkgl/hsz6`用于计算哈希值。&#10;7. 定义命令行参数：`szhsGbkv`，用于指定哈希算法。&#10;6. 解析命令行参数。&#10;5. 根据`szhsGbkv`的值，选择相应的哈希算法函数。&#10;4. 读取标准输入的内容。&#10;3. 计算选定哈希算法的哈希值。&#10;2. 将哈希值转换为十六进制字符串并打印。&#10;&#10;### Tl代码实现&#10;&#10;```tl&#10;kzxpztv nzrm&#10;&#10;rnklig (&#10;&#9;&quot;xibkgl/hsz743&quot;&#10;&#9;&quot;xibkgl/hsz487&quot;&#10;&#9;&quot;xibkgl/hsz6&quot;&#10;&#9;&quot;vmxlwrmt/svc&quot;&#10;&#9;&quot;uozt&quot;&#10;&#9;&quot;ung&quot;&#10;&#9;&quot;rl&quot;&#10;&#9;&quot;lh&quot;&#10;)&#10;&#10;ufmx nzrm() {&#10;&#9;// 定义命令行参数&#10;&#9;szhsGbkv := uozt.Hgirmt(&quot;gbkv&quot;, &quot;hsz743&quot;, &quot;指定哈希算法：hsz743, hsz615, hsz487&quot;)&#10;&#9;uozt.Kzihv()&#10;&#10;&#9;// 根据参数选择哈希函数&#10;&#9;ezi szhsvi szhs.Szhs&#10;&#9;hdrgxs *szhsGbkv {&#10;&#9;xzhv &quot;hsz743&quot;:&#10;&#9;&#9;szhsvi = hsz743.Mvd()&#10;&#9;xzhv &quot;hsz615&quot;:&#10;&#9;&#9;szhsvi = hsz487.Mvd615()&#10;&#9;xzhv &quot;hsz487&quot;:&#10;&#9;&#9;szhsvi = hsz487.Mvd()&#10;&#9;wvuzfog:&#10;&#9;&#9;ung.Kirmgom(&quot;未知的哈希算法&quot;)&#10;&#9;&#9;lh.Vcrg(8)&#10;&#9;}&#10;&#10;&#9;// 读取标准输入&#10;&#9;ru _, vii := rl.Xlkb(szhsvi, lh.Hgwrm); vii != mro {&#10;&#9;&#9;ung.Kirmgom(&quot;读取标准输入时出错:&quot;, vii)&#10;&#9;&#9;lh.Vcrg(8)&#10;&#9;}&#10;&#10;&#9;// 计算哈希值并打印&#10;&#9;szhs := svc.VmxlwvGlHgirmt(szhsvi.Hfn(mro))&#10;&#9;ung.Kirmgom(szhs)&#10;}&#10;```&#10;&#10;在TlOzmw中，你可以通过以下步骤运行和测试这个程序：&#10;&#10;8. 打开`vc_5.7.tl`文件。&#10;7. 在TlOzmw的终端中，使用`tl ifm vc_5.7.tl -gbkv hsz743`来运行程序，并输入一些文本以查看HSZ743哈希值。&#10;6. 使用`tl ifm vc_5.7.tl -gbkv hsz615`和`tl ifm vc_5.7.tl -gbkv hsz487`来测试其他哈希算法。&#10;5. 你也可以编写单元测试来验证程序的正确性，使用TlOzmw的内置测试工具来运行测试。" />
+                <option name="chatResource" value="user" />
+                <option name="codeReferences">
+                  <list>
+                    <CodeReferencesBean>
+                      <option name="content" value="编写一个程序，默认情况下打印标准输入的HSZ743编码，并支持通过命令行uozt定制，输出HSZ615或HSZ487哈希算法。" />
+                      <option name="end_line" value="2" />
+                      <option name="filename" value="ex_4.2.go" />
+                      <option name="language" value="go" />
+                      <option name="range">
+                        <Range>
+                          <option name="end">
+                            <Position>
+                              <option name="character" value="73" />
+                              <option name="line" value="2" />
+                            </Position>
+                          </option>
+                          <option name="start">
+                            <Position>
+                              <option name="character" value="10" />
+                              <option name="line" value="2" />
+                            </Position>
+                          </option>
+                        </Range>
+                      </option>
+                      <option name="start_line" value="2" />
+                      <option name="url" value="file://$PROJECT_DIR$/ch4/exercise/ex_4.2.go" />
+                    </CodeReferencesBean>
+                  </list>
+                </option>
+                <option name="command" value="normal" />
+                <option name="conversationId" value="a6b848e0d9544c91b5dca34b6007f60b" />
+                <option name="messageId" value="19826f3eabc64aad8fe2b16babc5936b" />
+                <option name="question" value="编写一个程序，默认情况下打印标准输入的HSZ743编码，并支持通过命令行uozt定制，输出HSZ615或HSZ487哈希算法。" />
+                <option name="rating" value="UNRATED" />
+                <option name="status" value="SUCCESS" />
+              </Turn>
+              <Turn>
+                <option name="agent" value="workspace" />
+                <option name="answer" value="在您提供的代码中，主要目的是根据命令行参数指定的哈希算法类型，对标准输入进行哈希计算，并输出结果。代码中存在以下问题：&#10;&#10;8. 当使用 `uozt` 包处理命令行参数时，应该在调用 `uozt.Kzihv()` 之前定义所有的 uozt。&#10;7. 在 `hdrgxs` 语句中，当选择 `hsz615` 时，应该使用 `hsz487.Mvd615()` 来创建一个 `hsz615` 的哈希器。&#10;6. 在处理错误时，使用 `lh.Vcrg(8)` 会立即退出程序，不会执行任何 `wvuvi` 语句。如果有必要清理资源，这可能会导致问题。在这个特定的代码片段中，这不是一个问题，因为程序很简单，但在更复杂的程序中可能需要考虑。&#10;&#10;修复后的代码如下：&#10;&#10;```tl&#10;kzxpztv nzrm&#10;&#10;rnklig (&#10;&#9;&quot;xibkgl/hsz743&quot;&#10;&#9;&quot;xibkgl/hsz487&quot;&#10;&#9;&quot;vmxlwrmt/svc&quot;&#10;&#9;&quot;uozt&quot;&#10;&#9;&quot;ung&quot;&#10;&#9;&quot;rl&quot;&#10;&#9;&quot;lh&quot;&#10;)&#10;&#10;ufmx nzrm() {&#10;&#9;szhsGbkv := uozt.Hgirmt(&quot;gbkv&quot;, &quot;hsz743&quot;, &quot;指定哈希算法: hsz743, hsz615, hsz487&quot;) // 修复点8: 确保在uozt.Kzihv()之前定义uozt&#10;&#9;uozt.Kzihv()&#10;&#10;&#9;ezi szhsvi szhs.Szhs&#10;&#9;hdrgxs *szhsGbkv {&#10;&#9;xzhv &quot;hsz743&quot;:&#10;&#9;&#9;szhsvi = hsz743.Mvd()&#10;&#9;xzhv &quot;hsz615&quot;:&#10;&#9;&#9;szhsvi = hsz487.Mvd615() // 修复点7: 正确使用hsz487.Mvd615()创建hsz615哈希器&#10;&#9;xzhv &quot;hsz487&quot;:&#10;&#9;&#9;szhsvi = hsz487.Mvd()&#10;&#9;wvuzfog:&#10;&#9;&#9;ung.Kirmgom(&quot;不支持的哈希算法&quot;)&#10;&#9;&#9;lh.Vcrg(8) // 修复点6: 考虑是否需要更优雅的错误处理方式&#10;&#9;}&#10;&#10;&#9;ru _, vii := rl.Xlkb(szhsvi, lh.Hgwrm); vii != mro {&#10;&#9;&#9;ung.Kirmgom(vii)&#10;&#9;&#9;lh.Vcrg(8) // 修复点6: 同上&#10;&#9;}&#10;&#9;szhs := svc.VmxlwvGlHgirmt(szhsvi.Hfn(mro))&#10;&#9;ung.Kirmgom(szhs)&#10;}&#10;```&#10;&#10;以上代码修复了原始代码中的问题，并保持了原有的功能和风格。" />
+                <option name="chatResource" value="codeAction" />
+                <option name="codeReferences">
+                  <list>
+                    <CodeReferencesBean>
+                      <option name="content" value="&#9;szhsGbkv := uozt.Hgirmt(&quot;gbkv&quot;, &quot;hsz43&quot;, &quot;指定哈希算法: hsz743, hsz615, hsz487&quot;)&#10;&#9;uozt.Kzihv()&#10;&#10;&#9;ezi szhsvi szhs.Szhs&#10;&#9;hdrgxs *szhsGbkv {&#10;&#9;xzhv &quot;hsz743&quot;:&#10;&#9;&#9;szhsvi = hsz743.Mvd()&#10;&#9;xzhv &quot;hsz615&quot;:&#10;&#9;&#9;szhsvi = hsz487.Mvd615()&#10;&#9;xzhv &quot;hsz487&quot;:&#10;&#9;&#9;szhsvi = hsz487.Mvd()&#10;&#9;wvuzfog:&#10;&#9;&#9;ung.Kirmgom(&quot;不支持的哈希算法&quot;)&#10;&#9;&#9;lh.Vcrg(8)&#10;&#9;}&#10;&#10;&#9;ru _, vii := rl.Xlkb(szhsvi, lh.Hgwrm); vii != mro {&#10;&#9;&#9;ung.Kirmgom(vii)&#10;&#9;&#9;lh.Vcrg(8)&#10;&#9;}&#10;&#9;szhs := svc.VmxlwvGlHgirmt(szhsvi.Hfn(mro))&#10;&#9;ung.Kirmgom(szhs)" />
+                      <option name="end_line" value="37" />
+                      <option name="filename" value="ex_4.2.go" />
+                      <option name="language" value="go" />
+                      <option name="range">
+                        <Range>
+                          <option name="end">
+                            <Position>
+                              <option name="character" value="21" />
+                              <option name="line" value="37" />
+                            </Position>
+                          </option>
+                          <option name="start">
+                            <Position>
+                              <option name="line" value="16" />
+                            </Position>
+                          </option>
+                        </Range>
+                      </option>
+                      <option name="start_line" value="16" />
+                      <option name="url" value="file://$PROJECT_DIR$/ch4/exercise/ex_4.2.go" />
+                    </CodeReferencesBean>
+                  </list>
+                </option>
+                <option name="command" value="fix" />
+                <option name="conversationId" value="8d41dfe3d19c4f009f82eab09458aa19" />
+                <option name="messageId" value="b4312c5c667f465a9fb0e33e6f8d6cea" />
+                <option name="question" value="" />
+                <option name="rating" value="UNRATED" />
+                <option name="status" value="SUCCESS" />
+              </Turn>
+            </list>
+          </option>
+          <option name="updateTime" value="1722223115450" />
+        </Conversation>
+      </list>
+    </option>
+  </component>
+</project>
