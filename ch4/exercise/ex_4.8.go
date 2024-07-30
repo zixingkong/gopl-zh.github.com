@@ -19,7 +19,7 @@ func whatType(r rune) string {
 	if unicode.Is(unicode.Han, r) {
 		return "中文"
 	}
-	if r >= 65 && r <= 122 {
+	if unicode.IsLetter(r) {
 		return "英文"
 	}
 	return "any"
