@@ -1,4 +1,4 @@
-package main
+package ex_5_5
 
 import (
 	"fmt"
