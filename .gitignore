@@ -19,3 +19,4 @@ version.md
 gopl-zh-*
 _book.zip
 .idea
+*.[^.]*

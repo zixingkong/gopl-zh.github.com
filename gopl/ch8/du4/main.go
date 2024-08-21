@@ -67,10 +67,13 @@ loop:
 		select {
 		case <-done:
 			// Drain fileSizes to allow existing goroutines to finish.
+			// 清空fileSize通道, 保证对walkDir的调用不会被向fileSizes发送的消息阻塞
+			// # TODO: 如何保证当前的正在进行的walkDir goroutine调用都完成后, 再返回?
 			for range fileSizes {
 				// Do nothing.
 			}
-			return
+			panic("cancelled")
+			// return
 		case size, ok := <-fileSizes:
 			// ...
 			//!-3
@@ -95,6 +98,7 @@ func printDiskUsage(nfiles, nbytes int64) {
 //!+4
 func walkDir(dir string, n *sync.WaitGroup, fileSizes chan<- int64) {
 	defer n.Done()
+	// TODO: 当done通道被发送一个值后，以后每次调用cancelled()时都会返回true吗
 	if cancelled() {
 		return
 	}
