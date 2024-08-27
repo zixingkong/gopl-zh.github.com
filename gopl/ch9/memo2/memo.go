@@ -5,7 +5,7 @@
 
 // Package memo provides a concurrency-safe memoization a function of
 // type Func.  Concurrent requests are serialized by a Mutex.
-package memo
+package memo2
 
 import "sync"
 

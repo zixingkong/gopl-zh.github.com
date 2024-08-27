@@ -4,7 +4,7 @@
 // See page 262.
 
 // Package bank provides a concurrency-safe bank with one account.
-package bank
+package bank2
 
 //!+
 var (

@@ -6,7 +6,7 @@
 // Package memo provides a concurrency-safe memoization a function of
 // type Func.  Requests for different keys run concurrently.
 // Concurrent requests for the same key result in duplicate work.
-package memo
+package memo3
 
 import "sync"
 

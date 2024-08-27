@@ -4,7 +4,7 @@
 // See page 263.
 
 // Package bank provides a concurrency-safe single-account bank.
-package bank
+package bank3
 
 //!+
 import "sync"

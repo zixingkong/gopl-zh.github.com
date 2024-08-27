@@ -7,7 +7,7 @@
 // a function.  Requests for different keys proceed in parallel.
 // Concurrent requests for the same key block until the first completes.
 // This implementation uses a Mutex.
-package memo
+package memo4
 
 import "sync"
 
@@ -34,7 +34,8 @@ type Memo struct {
 	mu    sync.Mutex // guards cache
 	cache map[string]*entry
 }
-
+// TODO: add a buffered channel to the Memo to reduce lock contention.
+// 并发、不重复、无阻塞的cache
 func (memo *Memo) Get(key string) (value interface{}, err error) {
 	memo.mu.Lock()
 	e := memo.cache[key]

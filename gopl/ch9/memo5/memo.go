@@ -7,7 +7,7 @@
 // of a function.  Requests for different keys proceed in parallel.
 // Concurrent requests for the same key block until the first completes.
 // This implementation uses a monitor goroutine.
-package memo
+package memo5
 
 //!+Func
 
