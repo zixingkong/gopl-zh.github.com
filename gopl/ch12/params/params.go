@@ -7,6 +7,7 @@
 package params
 
 import (
+	"encoding/json"
 	"fmt"
 	"net/http"
 	"reflect"
@@ -35,9 +36,11 @@ func Unpack(req *http.Request, ptr interface{}) error {
 		}
 		fields[name] = v.Field(i)
 	}
-
+	objBytes, _ := json.Marshal(fields)
+	fmt.Println(string(objBytes))
 	// Update struct field for each parameter in the request.
 	for name, values := range req.Form {
+		fmt.Println(name,values)
 		f := fields[name]
 		if !f.IsValid() {
 			continue // ignore unrecognized HTTP parameters
@@ -45,6 +48,8 @@ func Unpack(req *http.Request, ptr interface{}) error {
 		for _, value := range values {
 			if f.Kind() == reflect.Slice {
 				elem := reflect.New(f.Type().Elem()).Elem()
+				elemJson, _ := json.Marshal(elem)
+				fmt.Println(string(elemJson))
 				if err := populate(elem, value); err != nil {
 					return fmt.Errorf("%s: %v", name, err)
 				}
@@ -56,6 +61,8 @@ func Unpack(req *http.Request, ptr interface{}) error {
 			}
 		}
 	}
+	reqJson, _ := json.Marshal(ptr)
+	fmt.Println(string(reqJson))
 	return nil
 }
 
